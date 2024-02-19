@@ -29,13 +29,13 @@ What is the average price of a home for each year that has three bedrooms, three
 
 What is the "view" rating for homes costing more than or equal to $350,000? I determined the run time for this query.
 
-![06 Avg Price Per View Rating](https://github.com/margoberry17/22-Home-Sales/assets/136475202/0a82ec19-d643-430f-b358-166bfb526ac6)
+![06 Avg Price Per View Rating](https://github.com/margoberry17/22-Home-Sales/assets/136475202/6a96f5dd-1e0f-4dc5-acbe-93ed7320d2a0)
 
 5. Cached my temporary table homeSales and checked if my temporary table was cached.
 
 6. Using the cached data, I ran the query that filtered out the view ratings with an average price of greater than or equal to $350,000. I determined the runtime and compared it to the uncached runtime.
 
-![09 Cached Avg Price Per View Rating](https://github.com/margoberry17/22-Home-Sales/assets/136475202/21837e18-57b7-40ac-9944-c6f0e2e80fb6)
+![09 Cached Avg Price Per View Rating](https://github.com/margoberry17/22-Home-Sales/assets/136475202/a968a32e-6b8d-401e-b6da-98a2e9f3c352)
 
 7. I partitioned the "date_built" field on the formatted parquet home sales data.
 
@@ -43,6 +43,6 @@ What is the "view" rating for homes costing more than or equal to $350,000? I de
 
 9. I ran the query that filtered out the view ratings with an average price of greater than or equal to $350,000. I determined the runtime and compared it to the uncached runtime.
 
-![13 Parquet Avg Price Per View Rating](https://github.com/margoberry17/22-Home-Sales/assets/136475202/9d0a73aa-d134-42d4-b5c9-e18bdbaab9d9)
+![13 Parquet Avg Price Per View Rating](https://github.com/margoberry17/22-Home-Sales/assets/136475202/264d3586-8943-4c56-8a97-63ab3a67d772)
 
 10. I uncached the homeSales temporary table and verified that the homeSales temporary table was uncached using PySpark.
